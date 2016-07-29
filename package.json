@@ -1,0 +1,31 @@
+{
+  "name": "vue-share",
+  "version": "1.0.0",
+  "description": "vue share component",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wangcpsnow/vue-share.git"
+  },
+  "keywords": [
+    "vue-share"
+  ],
+  "author": "wangchunpeng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wangcpsnow/vue-share/issues"
+  },
+  "homepage": "https://github.com/wangcpsnow/vue-share#readme",
+  "devDependencies": {
+    "babel-core": "^6.11.4",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "webpack": "^1.13.1"
+  }
+}
