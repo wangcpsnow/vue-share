@@ -48,7 +48,7 @@
 
 	Share.install = () => {
 	    Vue.component("v-share", Vue.extend({
-	        name: 'v-share',
+	        // name: 'v-share',
 	        template: `<div>
 	            <input type="button" value="{{val_btn}}" @click="click_btn"/>
 	         </div>
