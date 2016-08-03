@@ -1,3 +1,5 @@
+import {mixin}  from './utils.js'
+
 class Share {}
 
 Share.install = () => {
@@ -14,6 +16,7 @@ Share.install = () => {
         },
         methods: {
             click_btn: function() {
+                mixin({a:1},{b:2});
                 alert("click_btn");
             }
         }

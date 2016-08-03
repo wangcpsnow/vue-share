@@ -11,7 +11,12 @@ module.exports = {
     module: {
         loaders: [{
             test: /\.js$/,
-            loader: 'babel'
+            loader: 'babel',
+            exclude: /node_modules/
         }]
-    }
+    },
+    babel: {
+        presets: ['es2015']
+    },
+    devtool: 'source-map'
 }

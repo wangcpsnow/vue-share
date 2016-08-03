@@ -1,5 +1,14 @@
 'use strict';
 
+var mixin = function mixin(source, target) {
+    for (var key in target) {
+        if (target.hasOwnProperty(key)) {
+            source[key] = target[key];
+        }
+    }
+    return source;
+};
+
 var classCallCheck = function (instance, Constructor) {
   if (!(instance instanceof Constructor)) {
     throw new TypeError("Cannot call a class as a function");
@@ -21,6 +30,7 @@ Share.install = function () {
         },
         methods: {
             click_btn: function click_btn() {
+                mixin({ a: 1 }, { b: 2 });
                 alert("click_btn");
             }
         }
