@@ -61,7 +61,8 @@
 	    components: {
 	        'alert': _vueStrap.alert,
 	        dropdown: _vueStrap.dropdown,
-	        datepicker: _vueStrap.datepicker
+	        datepicker: _vueStrap.datepicker,
+	        popover: _vueStrap.popover
 	    },
 	    methods: {
 	        click_toggle: function click_toggle() {

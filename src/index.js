@@ -1,4 +1,4 @@
-import { alert,dropdown,datepicker } from 'vue-strap'
+import { alert,dropdown,datepicker,popover } from 'vue-strap'
 import { vshare } from './v-share.js'
 
 console.log(alert)
@@ -12,7 +12,8 @@ new Vue({
     components: {
         'alert': alert,
         dropdown,
-        datepicker
+        datepicker,
+        popover
     },
     methods: {
         click_toggle: function() {
