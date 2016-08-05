@@ -7,19 +7,25 @@
 <body>
     <div id="app">
         <v-share></v-share>
+        <input type="button" value="toggle" @click="showRight = !showRight"/>
+        <alert
+          :show.sync="showRight"
+          :duration="3000"
+          type="success"
+          width="400px"
+          placement="top-right"
+          dismissable
+        >
+          <span class="icon-ok-circled alert-icon-float-left"></span>
+          <strong>Well Done!</strong>
+          <p>You successfully read this important alert message.</p>
+        </alert>
+
     </div>
     <script type="text/javascript" src="http://cdn.bootcss.com/vue/1.0.26/vue.js"></script>
     <!--
     <script type="text/javascript" src="../dist/index.js"></script>
     -->
     <script type="text/javascript" src="../dist/index.js"></script>
-    <script type="text/javascript">
-        new Vue({
-            el: '#app',
-            data: {
-                
-            }
-        });
-    </script>
 </body>
 </html>

@@ -1,5 +1,7 @@
 'use strict';
 
+var vueStrap = require('vue-strap');
+
 var mixin = function mixin(source, target) {
     for (var key in target) {
         if (target.hasOwnProperty(key)) {
@@ -40,4 +42,12 @@ Share.install = function () {
 if (typeof window !== 'undefined' && window.Vue) {
     window.Vue.use(Share);
 }
+
+new Vue({
+    el: '#app',
+    compoents: {
+        alert: vueStrap.alert
+    },
+    data: {}
+});
 //# sourceMappingURL=bundle.js.map

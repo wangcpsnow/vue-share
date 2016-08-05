@@ -3,6 +3,7 @@ var webpack = require('webpack');
 
 module.exports = {
     entry: './src/index.js',
+    watch:true,
     output: {
         path: './dist',
         publicPath: '/dist/',

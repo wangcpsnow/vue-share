@@ -1,30 +1,22 @@
-import {mixin}  from './utils.js'
+import { alert,dropdown,datepicker } from 'vue-strap'
+import { vshare } from './v-share.js'
 
-class Share {}
+console.log(alert)
 
-Share.install = () => {
-    Vue.component("v-share", Vue.extend({
-        // name: 'v-share',
-        template: `<div>
-            <input type="button" value="{{val_btn}}" @click="click_btn"/>
-         </div>
-        `,
-        data: function() {
-            return {
-                val_btn: "哼哼哈嘿"
-            }
-        },
-        methods: {
-            click_btn: function() {
-                mixin({a:1},{b:2});
-                alert("click_btn");
-            }
+new Vue({
+    el: '#app',
+    data: {
+        showRight: false,
+        value: '2016-08-04 12:00'
+    },
+    components: {
+        'alert': alert,
+        dropdown,
+        datepicker
+    },
+    methods: {
+        click_toggle: function() {
+            this.showRight = !this.showRight;
         }
-    }));
-}
-
-if (typeof window !== 'undefined' && window.Vue) {
-    window.Vue.use(Share);
-}
-
-// export default Share;
+    }
+});
